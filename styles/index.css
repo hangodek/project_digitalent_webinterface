@@ -1,0 +1,106 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Header */
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(191, 62%, 69%);
+}
+
+.title-container h1, h4 {
+    margin-bottom: 0.5rem;
+}
+
+.nav-container nav > ul {
+    display: flex;
+    flex-direction: row;
+    background-color: hwb(209 27% 63%);
+    color: white;
+    list-style: none;
+}
+
+.nav-container nav > ul > li {
+    padding: 1rem;
+    transition: all 200ms ease;
+}
+
+.nav-container nav > ul > li:hover {
+    background-color: black;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* -------------------- */
+
+/* BODY */ 
+
+/* Section */
+
+.content-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+section div > img {
+    height: 12rem;
+    min-width: 100%;
+}
+
+.card-content {
+    border: 1px solid black;
+    padding: 1rem;
+    box-shadow: 0px 2px 2px 1px;
+}
+
+.card-content > h4 {
+    margin-top: 0.5rem;
+}
+
+.card-content > button {
+    border-radius: 0.3rem;
+    height: 2rem;
+    width: 6rem;
+    color: white;
+    background-color: rgb(60, 205, 55);
+    transition: all 200ms ease;
+}
+
+.card-content > button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Section */
+
+/* Aside */
+
+aside {
+    padding: 1rem;
+}
+
+/* Aside */
+
+
+
+
+
+
