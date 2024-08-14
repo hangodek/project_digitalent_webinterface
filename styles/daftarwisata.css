@@ -7,31 +7,21 @@
 
 body, html {
     height: 100%;
-    width: 100%;
 }
 
 /* Header */
-
-/* header {
-    width: 100%;
-} */
 
 .title-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
     background-color: hsl(191, 62%, 69%);
 }
 
 .title-container h1, h4 {
     margin-bottom: 0.5rem;
 }
-
-/* .nav-container {
-    width: 100%;
-} */
 
 .nav-container nav > ul {
     display: flex;
@@ -67,9 +57,7 @@ body, html {
 
 section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
-    gap: 1rem;
 }
 
 section div > img {
@@ -89,25 +77,38 @@ section div > img {
 }
 
 .card-content {
-    display: flex;
-    flex-direction: column;
     border: 1px solid black;
     padding: 1rem;
     box-shadow: 0px 2px 2px 1px;
 }
 
+.card-content table {
+    width: 100%;
+}
+
+.card-content table, th, td {
+    /* min-width: 10rem; */
+    padding: 0.5rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.card-content tbody {
+    margin-top: 1rem;
+}
+
 .card-content-animation1 {
-    animation: cardDropDown 1s ease-out;
+    animation: cardDropDown 3s ease-out;
 }
 
 .card-content-animation2 {
-    animation: cardDropDown 1s ease-in-out forwards;
-    animation-delay: 1s;
+    animation: cardDropDown 3s ease-in-out forwards;
+    animation-delay: 2s;
     opacity: 0;
 }
 
 .card-content-animation3 {
-    animation-delay: 2s; /* This have higher precedence than animation2 */
+    animation-delay: 4s; /* This have higher precedence than animation2 */
 }
 
 .card-content > h4 {
@@ -143,8 +144,6 @@ aside {
 
 /* Aside */
 
-/* MEDIA QUERIES */
-
 @media screen and (max-width: 750px) {
     .title-container h1 {
         font-size: 30px;
@@ -165,18 +164,14 @@ aside {
         flex-direction: column;
     }
 
-    .card-content > img {
-        max-width: 300px;
+    .card-content > table {
+        width: 100%;
+        table-layout: auto;
     }
 
     aside {
         display: flex;
         flex-direction: column;
-    }
-
-    aside iframe { 
-        align-self: center;
-        max-width: fit-content;
     }
 }
 
@@ -185,15 +180,8 @@ aside {
         display: flex;
         flex-direction: column;
     }
-
-    aside h1, h3 {
-        text-align: center;
-    }
-
-    aside iframe {
-        align-self: center;
-    }
 }
+
 
 
 

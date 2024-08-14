@@ -15,15 +15,7 @@
             <h4>Desa Wisata Indah Yang Sejuk dan Asri</h4>
         </div>
         <div class="nav-container">
-            <nav>
-                <ul>
-                    <li>Beranda</li>
-                    <li>Daftar Paket Wisata</li>
-                    <li>Ubah Pesanan</li>
-                    <li>Kritik dan Saran</li>
-                    <li>Kontak</li>
-                </ul>
-            </nav>
+            <?php require "component/nav.php"?>
         </div>
     </header>
 
@@ -55,6 +47,7 @@
                 <img src="./assets/desa4.jpeg" alt="">
                 <p>Paket wisata 2 hari (7 lokasi) dengan biaya</p>
                 <h4>Rp 1.000.000</h4>
+                <br>
                 <button>Deskripsi</button>
             </div>
         </section>
@@ -66,7 +59,7 @@
                 <h3>Paket Wisata 1</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/W_scX9R21_0?si=wfR42fX9Qsabv0fn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="card-content card-content-animation2">
+            <div class="card-content card-content-animation2 card-content-animation3">
                 <h1>Video</h1>
                 <h3>Paket Wisata 2</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wzChmPaSn30?si=V-nys_1FiiNC8hXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
